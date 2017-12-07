@@ -16,7 +16,7 @@ def hello(name=None):
 
 @app.route('/bootstrap/')
 @app.route('/bootstrap/<name>')
-def hello(name=None):
+def bootstrap(name=None):
     return render_template('bootstrap.html', name=name)
 
 if __name__ == '__main__':
